@@ -1,16 +1,15 @@
 ---
 title: "Getting started with DescriptiveStats.OBeu"
 author: "Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas"
-date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Getting started with DescriptiveStats.OBeu}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
 
-`DescriptiveStats.OBeu` enables the calculation of descriptive statistical measures, needed at [OpenBudgets.eu](http://openbudgets.eu/).
+`DescriptiveStats.OBeu` estimates the descriptive statistical measures, needed at [OpenBudgets.eu](http://openbudgets.eu/).
 You can measure central tendency and dispersion of numeric variables along with their distributions and correlations and the frequencies of categorical variables for a given dataset on [OpenBudgets.eu data mining tool platform](http://openbudgets.eu/tools/).
 
 The vignette provides an effective way to use functions of `DescriptiveStats.OBeu` with datasets including datasets of OpenBudgets.eu.
@@ -132,6 +131,7 @@ In this example `iris` dataset is used. Factor or character variables in the inp
 ```{r correlation json}
 iriscorr = ds.correlation(iris, cor.method="pearson", tojson=TRUE) # json format
 jsonlite::prettify(iriscorr) # use prettify of jsonlite library to add indentation to the returned JSON string
+
 ```
 ## Frequency
 
@@ -139,6 +139,7 @@ Frequencies and relative frequencies of factors/characters of the input dataset 
 ```{r frequency} 
 wuppertalfreq = ds.frequency(Wuppertal_df$Produktbereich, tojson = TRUE)
 jsonlite::prettify(wuppertalfreq) # use prettify of jsonlite library to add indentation to the returned JSON string
+
 ```
 If the input is a dataframe and the `select` parameter is not specified, all the factor variables will be returned.
 

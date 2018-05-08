@@ -31,12 +31,12 @@ vec <- as.vector(iris$Sepal.Width)
 ds.skewness(vec, tojson=TRUE)
 
 # OpenBudgets.eu Dataset Example:
-Wuppertal_df
+head(Wuppertal_df)
 ds.skewness(Wuppertal_df[,-4], tojson = FALSE)
 
 }
 \seealso{
-\code{\link{ds.kurtosis}}, \code{\link{ds.statistics}}, 
+\code{\link{ds.kurtosis}}, \code{\link{ds.statistics}},
 \code{\link{ds.analysis}}, \code{\link{open_spending.ds}}
 }
 \author{

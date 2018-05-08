@@ -21,8 +21,8 @@ This functions calculates the correlation coefficient of the input vectors, matr
 By default, the correlation coefficient of pearson is computed.
 }
 \details{
-This function returns an upper triangle matrix with the correlation coefficients 
-of the input data. The correlation coefficient of pearson is computed, by default. 
+This function returns an upper triangle matrix with the correlation coefficients
+of the input data. The correlation coefficient of pearson is computed, by default.
 Other options are "kendall" or "spearman".
 }
 \examples{
@@ -41,5 +41,5 @@ ds.correlation(Matrix, cor.method = "kendall", tojson=TRUE)
 \code{\link{ds.analysis}}, \code{\link{open_spending.ds}}
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

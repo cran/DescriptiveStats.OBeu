@@ -31,7 +31,7 @@
 #' ds.skewness(vec, tojson=TRUE)
 #' 
 #' # OpenBudgets.eu Dataset Example:
-#' Wuppertal_df
+#' head(Wuppertal_df)
 #' ds.skewness(Wuppertal_df[,-4], tojson = FALSE)
 #' 
 #' @rdname ds.skewness
@@ -42,7 +42,7 @@
 ds.skewness <- function(x, tojson=FALSE)
 {
   data <- as.data.frame(x)
-
+  
   # only numeric data
   data.num<-nums(data)
   

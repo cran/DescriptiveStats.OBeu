@@ -33,25 +33,24 @@
 #' 
 #' @examples 
 #' # OpenBudgets.eu Dataset Example:
-#' #data=Wuppertal_openspending
+#' #data = Wuppertal_openspending
 #' #open_spending.ds(data, dimensions ="functional_classification_3.Produktgruppe|date_2.Year",
 #'   #              amounts = "Amount")
 #'                 
 #' @rdname open_spending.ds
 #' 
-#'
 #' @export
 
- 
+
 open_spending.ds <- function(json_data, dimensions=NULL, amounts=NULL, measured.dimensions=NULL, 
                              coef.outl=1.5, box.outliers=T, box.wdth=0.15,
-                             cor.method= "pearson", freq.select=NULL){  
+                             cor.method= "pearson", freq.select=NULL){
+  
   linkexist<-RCurl::url.exists(json_data)
   if (linkexist){
     #json_data = RCurl::getURL(json_data)#, ssl.verifyhost=FALSE )
   } else if (!linkexist) stop("Not valid json data input")
   
-  #s <- readLines(json_data);
   dt <- jsonlite::fromJSON(json_data)
   
   components <- c("data", "cells")

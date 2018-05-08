@@ -20,7 +20,7 @@ cor.method= "pearson", freq.select=NULL)
 \item{coef.outl}{Determines the length of the "whiskers" plot.
 If it is equal to zero no outliers will be returned.}
 
-\item{box.outliers}{If TRUE the outliers will be computed at the selected "coef.outl" level 
+\item{box.outliers}{If TRUE the outliers will be computed at the selected "coef.outl" level
 (default is 1.5 times the Interquartile Range).}
 
 \item{box.wdth}{The width level is determined 0.15 times the square root of the size of the input data.}
@@ -37,12 +37,12 @@ A json string with the resulted parameters of the \code{\link{ds.analysis}} func
 Extract and analyze the input data provided from Open Spending API of OpenBudgets.eu, using the ds.analysis function.
 }
 \details{
-This function is used to read data in json format from Open Spending and Rudolf APIs., in order to implement 
+This function is used to read data in json format from Open Spending and Rudolf APIs., in order to implement
 some basic descriptive tasks through \code{\link{ds.analysis}} function.
 }
 \examples{
 # OpenBudgets.eu Dataset Example:
-#data=Wuppertal_openspending
+#data = Wuppertal_openspending
 #open_spending.ds(data, dimensions ="functional_classification_3.Produktgruppe|date_2.Year",
   #              amounts = "Amount")
                 

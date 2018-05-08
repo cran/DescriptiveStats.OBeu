@@ -47,7 +47,7 @@ ds.statistics(vec, tojson=FALSE)
 ds.statistics(iris, tojson=FALSE)
 
 # OpenBudgets.eu Dataset Example:
-Wuppertal_df
+head(Wuppertal_df)
 ds.statistics(Wuppertal_df$Amount, tojson = TRUE)
 
 }
@@ -55,5 +55,5 @@ ds.statistics(Wuppertal_df$Amount, tojson = TRUE)
 \code{\link{open_spending.ds}}
 }
 \author{
-Aikaterini Chatzopoulou, Kleanthis Koupidis
+Aikaterini Chatzopoulou, Kleanthis Koupidis, Charalampos Bratsas
 }

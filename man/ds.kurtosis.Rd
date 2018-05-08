@@ -31,14 +31,14 @@ vec <- as.vector(iris$Sepal.Width)
 ds.kurtosis(vec, tojson=TRUE)
 
 # OpenBudgets.eu Dataset Example:
-Wuppertal_df
+head(Wuppertal_df)
 ds.kurtosis(Wuppertal_df[,-4], tojson = FALSE)
 
 }
 \seealso{
-\code{\link{ds.skewness}}, \code{\link{ds.statistics}}, 
+\code{\link{ds.skewness}}, \code{\link{ds.statistics}},
 \code{\link{ds.analysis}}, \code{\link{open_spending.ds}}
 }
 \author{
-Aikaterini Chatzopoulou
+Aikaterini Chatzopoulou, Charalampos Bratsas
 }
